@@ -1,0 +1,26 @@
+.title {
+  display: flex;
+  flex-direction: row-reverse;
+
+  font-size: 20px;
+}
+
+.photo {
+  float: left;
+  margin: 20px 10px 10px 0;
+
+  border-radius: 5px;
+}
+
+.article {
+  margin-top: 20px;
+
+  font-size: 16px;
+}
+
+.sign {
+  text-align: right;
+
+  font-style: italic;
+  font-size: 14px;
+}
