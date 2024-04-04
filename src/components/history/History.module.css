@@ -1,0 +1,54 @@
+.history {
+  margin-top: 50px;
+
+  padding: 20px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  box-shadow: 5px 5px 10px grey;
+}
+
+.title {
+  margin-bottom: 10px;
+
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.article {
+  display: flex;
+}
+
+.image {
+  width: 170px;
+  height: 170px;
+  margin-right: 10px;
+
+  border-radius: 5px;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 150px;
+  height: 40px;
+  margin: 10px auto 0 auto;
+
+  background-color: rgb(43, 64, 172);
+  border-radius: 8px;
+  color: #ffffff;
+
+  font-weight: 700;
+
+  transition: transform 0.2s;
+}
+
+.read-more:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
