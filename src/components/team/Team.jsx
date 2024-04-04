@@ -6,17 +6,13 @@ const Team = () => {
       <h3 className={css.title}>Наша команда</h3>
       <ul className={css["team-list"]}>
         <li className={css["team-item"]}>
-          <img
-            src="src/images/IMG_9681_small.jpg"
-            alt=""
-            className={css.image}
-          />
+          <img src="/IMG_9681_small.jpg" alt="" className={css.image} />
           <p className={css.name}>Дерек Томас</p>
           <p>Президент СБІ</p>
         </li>
         <li className={css["team-item"]}>
           <img
-            src="src/images/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
+            src="/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
             alt=""
             className={css.image}
           />
@@ -24,18 +20,14 @@ const Team = () => {
           <p>Заступник президента СБІ</p>
         </li>
         <li className={css["team-item"]}>
-          <img
-            src="src/images/DAS03987_small.jpg"
-            alt=""
-            className={css.image}
-          />
+          <img src="/DAS03987_small.jpg" alt="" className={css.image} />
           <p className={css.name}>Парфенюк</p>
           <p className={css.name}>Павло Васильович</p>
           <p>Перекладач, викладач</p>
         </li>
         <li className={css["team-item"]}>
           <img
-            src="src/images/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
+            src="/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
             alt=""
             className={css.image}
           />
@@ -45,7 +37,7 @@ const Team = () => {
         </li>
         <li className={css["team-item"]}>
           <img
-            src="src/images/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
+            src="/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
             alt=""
             className={css.image}
           />
@@ -55,7 +47,7 @@ const Team = () => {
         </li>
         <li className={css["team-item"]}>
           <img
-            src="src/images/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
+            src="/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
             alt=""
             className={css.image}
           />

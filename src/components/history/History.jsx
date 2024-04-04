@@ -20,7 +20,7 @@ const History = () => {
           </p>
           <div className={css["read-more"]}>Читати більше</div>
         </div>
-        <img src="src/images/IMG_2650_small.jpg" alt="" className={css.image} />
+        <img src="/IMG_2650_small.jpg" alt="" className={css.image} />
       </div>
     </div>
   );

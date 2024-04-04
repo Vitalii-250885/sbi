@@ -4,11 +4,7 @@ const WordPresedent = () => {
   return (
     <div className={css["message-presedent"]}>
       <h2 className={css.title}>Слово президента СБІ</h2>
-      <img
-        src="src/images/IMG_0222_small.jpg"
-        alt="Derek Thomas"
-        className={css.photo}
-      />
+      <img src="/IMG_0222_small.jpg" alt="Derek Thomas" className={css.photo} />
       <article className={css.article}>
         «Слов’янський Баптистський Інститут (СБІ) був заснований в лютому 1996
         року. Кінцева мета СБІ – прославити Бога. Ми можемо славити Бога, коли
