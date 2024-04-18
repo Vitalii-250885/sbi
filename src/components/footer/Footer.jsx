@@ -3,7 +3,7 @@ import css from "./Footer.module.css";
 const Footer = () => {
   return (
     <div className={css.footer}>
-      <ul>
+      {/* <ul className={css["contacts-list"]}>
         <li className={css["contacts-item"]}>
           <img
             src="/png-transparent-facebook-logo-computer-icons-facebook-blue-trademark-logo.png"
@@ -28,7 +28,7 @@ const Footer = () => {
         <li className={css["contacts-item"]}>
           <img src="/email.png" alt="mail" className={css.icon} />
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 };

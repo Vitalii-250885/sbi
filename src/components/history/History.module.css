@@ -1,7 +1,8 @@
 .history {
-  margin-top: 50px;
-
+  margin-top: 10px;
+  margin-left: 10px;
   padding: 20px;
+  width: 50%;
 
   background-color: #ffffff;
   border-radius: 10px;
@@ -20,12 +21,14 @@
 
 .article {
   display: flex;
+  text-align: justify;
+  font-size: 16px;
 }
 
 .image {
-  width: 170px;
-  height: 170px;
-  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
 
   border-radius: 5px;
 }

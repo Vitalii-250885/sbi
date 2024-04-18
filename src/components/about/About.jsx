@@ -5,17 +5,26 @@ import Program from "../program/Program";
 import MessagePresedent from "../messagePresedent/MessagePresedent";
 
 import css from "./About.module.css";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
 
 const About = () => {
   return (
-    <div className={css.about}>
-      <h2 className={css.title}>Про нас</h2>
-      <MessagePresedent />
-      <History />
-      <Team />
-      <Believe />
-      <Program />
-    </div>
+    <>
+      <Header />
+      <div className={css.about}>
+        <h2 className={css.title}>Про нас</h2>
+        <div className={css.articles}>
+          <MessagePresedent />
+          <History />
+        </div>
+
+        <Team />
+        <Believe />
+        <Program />
+      </div>
+      <Footer />
+    </>
   );
 };
 

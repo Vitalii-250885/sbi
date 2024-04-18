@@ -3,7 +3,12 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+
+  scroll-behavior: smooth;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 h1,
