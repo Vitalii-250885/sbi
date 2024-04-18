@@ -3,22 +3,22 @@
     {
       "id": "1",
       "title": "Пройшла літня сесія",
-      "img": "../public/369682240_3108910742746298_5921123148871020284_n.jpg",
+      "img": "/public/369682240_3108910742746298_5921123148871020284_n.jpg",
       "date": "26.08.2023",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam temporibus quia dolorem eos sed mollitia placeat delectus officia animi rem, nisi molestias, ipsa praesentium, qui voluptatibus. Tempora voluptatibus ab aliquid id et, magni ipsam iusto corrupti, eveniet eaque omnis excepturi. Delectus quasi odit sed praesentium ullam distinctio architecto nisi laborum minima, accusamus eligendi nam deserunt odio ratione unde corporis nobis nulla a illo aspernatur porro facilis? Nostrum animi aliquam pariatur blanditiis adipisci totam non, itaque deleniti aperiam esse rem voluptates amet sapiente doloremque, error unde modi odit repellendus similique. Eligendi ullam placeat, est nihil quaerat deleniti alias culpa facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam temporibus quia dolorem eos sed mollitia placeat delectus officia animi rem, nisi molestias, ipsa praesentium, qui voluptatibus. Tempora voluptatibus ab aliquid id et, magni ipsam iusto corrupti, eveniet eaque omnis excepturi. Delectus quasi odit sed praesentium ullam distinctio architecto nisi laborum minima, accusamus eligendi nam deserunt odio ratione unde corporis nobis nulla a illo aspernatur porro facilis? Nostrum animi aliquam pariatur blanditiis adipisci totam non, itaque deleniti aperiam esse rem voluptates amet sapiente doloremque, error unde modi odit repellendus similique. Eligendi ullam placeat, est nihil quaerat deleniti alias culpa facilis."
     },
     {
       "id": "2",
-      "title": "Пройшла літня сесія",
-      "img": "../public/369682240_3108910742746298_5921123148871020284_n.jpg",
-      "date": "26.08.2023",
+      "title": "Пройшла весняна сесія",
+      "img": "/public/369682240_3108910742746298_5921123148871020284_n.jpg",
+      "date": "06.03.2023",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam temporibus quia dolorem eos sed mollitia placeat delectus officia animi rem, nisi molestias, ipsa praesentium, qui voluptatibus. Tempora voluptatibus ab aliquid id et, magni ipsam iusto corrupti, eveniet eaque omnis excepturi. Delectus quasi odit sed praesentium ullam distinctio architecto nisi laborum minima, accusamus eligendi nam deserunt odio ratione unde corporis nobis nulla a illo aspernatur porro facilis? Nostrum animi aliquam pariatur blanditiis adipisci totam non, itaque deleniti aperiam esse rem voluptates amet sapiente doloremque, error unde modi odit repellendus similique. Eligendi ullam placeat, est nihil quaerat deleniti alias culpa facilis."
     },
     {
       "id": "3",
-      "title": "Пройшла літня сесія",
-      "img": "../public/369682240_3108910742746298_5921123148871020284_n.jpg",
-      "date": "26.08.2023",
+      "title": "Пройшла зимня сесія",
+      "img": "/public/369682240_3108910742746298_5921123148871020284_n.jpg",
+      "date": "26.01.2023",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam temporibus quia dolorem eos sed mollitia placeat delectus officia animi rem, nisi molestias, ipsa praesentium, qui voluptatibus. Tempora voluptatibus ab aliquid id et, magni ipsam iusto corrupti, eveniet eaque omnis excepturi. Delectus quasi odit sed praesentium ullam distinctio architecto nisi laborum minima, accusamus eligendi nam deserunt odio ratione unde corporis nobis nulla a illo aspernatur porro facilis? Nostrum animi aliquam pariatur blanditiis adipisci totam non, itaque deleniti aperiam esse rem voluptates amet sapiente doloremque, error unde modi odit repellendus similique. Eligendi ullam placeat, est nihil quaerat deleniti alias culpa facilis."
     }
   ],
