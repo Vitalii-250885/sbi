@@ -12,6 +12,12 @@ body {
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 h1,

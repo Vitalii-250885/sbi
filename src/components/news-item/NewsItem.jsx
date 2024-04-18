@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import css from "./NewsItem.module.css";
 
-const NewsItem = ({ img, date, text, title }) => {
+const NewsItem = ({ id, img, date, text, title }) => {
   return (
     <>
       <li className={css["news-item"]}>
@@ -10,7 +11,9 @@ const NewsItem = ({ img, date, text, title }) => {
           <span className={css.date}>{date}</span>
           <h4 className={css.title}>{title}</h4>
           <p className={css.text}>{text}</p>
-          <div className={css["read-more"]}>Читати більше</div>
+          <Link to={`/news/${id}`} className={css["read-more"]}>
+            Читати більше
+          </Link>
         </div>
       </li>
     </>
