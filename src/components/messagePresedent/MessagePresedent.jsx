@@ -1,25 +1,37 @@
+import { useEffect, useState } from "react";
 import css from "./MessagePresedent.module.css";
+import { fetchMessagePresedent } from "../../api/news";
+import { Link } from "react-router-dom";
 
 const WordPresedent = () => {
+  const [image, setImage] = useState("");
+  const [text, setText] = useState("");
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    const load = async () => {
+      const resData = await fetchMessagePresedent();
+      const { img, text, name } = resData;
+
+      setImage(img);
+      setText(text);
+      setName(name);
+    };
+    load();
+  }, []);
+
   return (
     <div className={css["message-presedent"]}>
       <h3 className={css.title}>Слово президента СБІ</h3>
 
       <div className={css.article}>
-        <img
-          src="/IMG_0222_small.jpg"
-          alt="Derek Thomas"
-          className={css.photo}
-        />
-        <p>
-          «Слов’янський Баптистський Інститут (СБІ) був заснований в лютому 1996
-          року. Кінцева мета СБІ – прославити Бога. Ми можемо славити Бога, коли
-          Його діти вивчають Слово Боже, вірять у Нього та застосовують це у
-          життя. Ми бажаємо, щоб ко...
-        </p>
+        <img src={image} alt={name} className={css.photo} />
+        <p className={css.text}>{text}</p>
       </div>
 
-      <div className={css["read-more"]}>Читати більше</div>
+      <Link to="/messagePresedent" className={css["read-more"]}>
+        Читати більше
+      </Link>
     </div>
   );
 };

@@ -37,8 +37,8 @@ const Team = () => {
         </li>
         <li className={css["team-item"]}>
           <img
-            src="/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
-            alt=""
+            src="/Janna_small.jpg"
+            alt="Процишина Жанна"
             className={css.image}
           />
           <p className={css.name}>Процишина</p>

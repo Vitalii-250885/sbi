@@ -1,7 +1,7 @@
 import History from "../history/History";
 import Team from "../team/Team";
 import Believe from "../believe/Believe";
-import Program from "../program/Program";
+// import Program from "../program/Program";
 import MessagePresedent from "../messagePresedent/MessagePresedent";
 
 import css from "./About.module.css";
@@ -20,8 +20,9 @@ const About = () => {
         </div>
 
         <Team />
+        {/* <Testimonials /> */}
         <Believe />
-        <Program />
+        {/* <Program /> */}
       </div>
       <Footer />
     </>

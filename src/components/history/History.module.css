@@ -28,9 +28,24 @@
 .image {
   width: 150px;
   height: 150px;
-  margin-left: 10px;
+  margin-right: 10px;
 
   border-radius: 5px;
+}
+
+.text {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  line-clamp: 6;
+  box-orient: vertical;
+
+  text-align: justify;
 }
 
 .read-more {
@@ -45,6 +60,7 @@
   background-color: rgb(43, 64, 172);
   border-radius: 8px;
   color: #ffffff;
+  text-decoration: none;
 
   font-weight: 700;
 

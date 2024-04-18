@@ -28,10 +28,19 @@
   border-radius: 5px;
 }
 
-.article {
-  display: flex;
-  text-align: justify;
+.text {
   font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  line-clamp: 6;
+  box-orient: vertical;
+
+  text-align: justify;
 }
 
 .sign {
@@ -53,6 +62,7 @@
   background-color: rgb(43, 64, 172);
   border-radius: 8px;
   color: #ffffff;
+  text-decoration: none;
 
   font-weight: 700;
 

@@ -5,14 +5,13 @@ import NewsPage from "../../pages/newsPage/NewsPage";
 import NotFoundPage from "../../pages/notFoundPage/NotFoundPage";
 import About from "../about/About";
 
-// import Testimonials from "../testimonials/Testimonials";
 // import Contacts from "../contacts/Contacts";
-// import Footer from "../footer/Footer";
-// import About from "../about/About";
 
 import css from "./App.module.css";
 
 import { Route, Routes } from "react-router-dom";
+import MessagePresedentDetailsPage from "../../pages/messagePresedentDetailsPage/MessagePresedentDetailsPage";
+import HistoryDetailsPage from "../../pages/historyDetailsPage/HistoryDetailsPage";
 
 function App() {
   return (
@@ -24,22 +23,14 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
 
         <Route path="/news/:newsId" element={<ArticlePage />} />
+        <Route
+          path="/messagePresedent"
+          element={<MessagePresedentDetailsPage />}
+        />
+        <Route path="/history" element={<HistoryDetailsPage />} />
       </Routes>
 
-      {/* <div className={css.body}>
-        <div className={css.container}>
-          <News />
-
-          
-          <Testimonials />
-          <Contacts />
-        </div>
-      </div>
-
-      
-      <div
-        className={clsx(css["btn-up"], scroll < 300 && css["btn-up_hide"])}
-        onClick={handlerScrollUp}></div> */}
+      {/* <Contacts /> */}
     </Suspense>
   );
 }
