@@ -5,10 +5,6 @@ import NewsPage from "../../pages/newsPage/NewsPage";
 import NotFoundPage from "../../pages/notFoundPage/NotFoundPage";
 import About from "../about/About";
 
-// import Contacts from "../contacts/Contacts";
-
-import css from "./App.module.css";
-
 import { Route, Routes } from "react-router-dom";
 import MessagePresedentDetailsPage from "../../pages/messagePresedentDetailsPage/MessagePresedentDetailsPage";
 import HistoryDetailsPage from "../../pages/historyDetailsPage/HistoryDetailsPage";
@@ -29,8 +25,6 @@ function App() {
         />
         <Route path="/history" element={<HistoryDetailsPage />} />
       </Routes>
-
-      {/* <Contacts /> */}
     </Suspense>
   );
 }

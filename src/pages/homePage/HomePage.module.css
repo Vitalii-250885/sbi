@@ -1,13 +1,6 @@
 .header-page {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
   height: 100%;
-  padding: 8px 45px 8px 8px;
+  padding: 10px;
 
   background-color: #212063;
   background-image: url(/Background-image.jpg);
@@ -15,36 +8,110 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 8px 45px 8px 8px;
+  }
 }
 
 .logo {
-  height: 100%;
+  position: fixed;
+  top: 20px;
+  left: calc(50% - 125px);
+  width: 250px;
+  height: 250px;
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    width: 300px;
+    height: 300px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: static;
+    width: 600px;
+    height: 600px;
+  }
 }
 
 .title {
-  width: 100%;
-  text-align: right;
+  text-align: center;
 
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 80px;
+  font-size: 50px;
   line-height: 1.3;
   color: #ffffff;
+  z-index: 1;
 
   text-shadow: 1px 1px 2px #000000, 0 0 1em #212063, 0 0 0.2em #212063;
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    text-align: right;
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 1.3;
+    color: #ffffff;
+
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #212063, 0 0 0.2em #212063;
+  }
 }
 
 .title-options {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 
   min-height: 100%;
   padding-bottom: 42px;
   padding-top: 18px;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    min-height: 100%;
+    padding-bottom: 42px;
+    padding-top: 18px;
+  }
 }
 
 .button {
