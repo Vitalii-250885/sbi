@@ -16,8 +16,6 @@ const NewsItem = () => {
     load();
   }, [newsId]);
 
-  console.log(newsId);
-
   return (
     <>
       {resData.map(({ id, date, img, title, text }) => (

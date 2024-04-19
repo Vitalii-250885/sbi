@@ -1,7 +1,5 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3000/";
-
 const options = {
   method: "GET",
   headers: {
@@ -10,31 +8,45 @@ const options = {
 };
 
 export const fetchNews = async (newsId) => {
-  const res = await axios(`/news/${newsId}`, options);
+  const res = await axios(
+    `https://a58e8714b3314a308149aa440a61b107.api.mockbin.io/${newsId}`,
+    options
+  );
 
-  return res.data;
+  const resData = res.data.results;
+
+  let newsItem = "";
+  resData
+    .filter((news) => news.id === newsId)
+    .map((news) => {
+      newsItem = news;
+    });
+
+  return newsItem;
 };
 
 export const fetchAllNews = async () => {
-  const res = await axios("/news", options);
+  const res = await axios(
+    "https://a58e8714b3314a308149aa440a61b107.api.mockbin.io/",
+    options
+  );
 
-  return res.data;
+  return res.data.results;
 };
 
 export const fetchMessagePresedent = async () => {
-  const res = await axios("/messagePresedent", options);
+  const res = await axios(
+    "https://d142ea36de534ad7b849c391944d4c61.api.mockbin.io/",
+    options
+  );
 
-  return res.data[0];
+  console.log(res.data.results);
+
+  return res.data.results;
 };
 
 export const fetchHistory = async () => {
   const res = await axios("/history", options);
 
-  return res.data[0];
-};
-
-export const fetchBelieve = async () => {
-  const res = await axios("/believe", options);
-
-  return res.data;
+  return res.data.history;
 };

@@ -29,7 +29,7 @@ const MessagePresedentDetailsPage = () => {
         <div className={css["message-presedent-container"]}>
           <img src={`/${image}`} alt="" className={css.image} />
           <div className={css["top-article"]}>
-          <h3 className={css.title}>Слово президента СБІ</h3>
+            <h3 className={css.title}>Слово президента СБІ</h3>
             <Link to="/about" className={css["go-back"]}>
               ← Назад
             </Link>
