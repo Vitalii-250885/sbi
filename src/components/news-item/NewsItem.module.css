@@ -12,6 +12,8 @@
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
+    width: 45%;
+    margin: 5px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -23,6 +25,9 @@
 
 .news-item:last-child {
   margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .photo {
