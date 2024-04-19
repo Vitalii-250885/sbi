@@ -17,7 +17,6 @@ const NewsDetailsPage = () => {
   useEffect(() => {
     const load = async () => {
       const resData = await fetchNews(newsId);
-      console.log("🚀 ~ load ~ resData:", resData);
       const { img, date, title, text } = resData;
 
       setImage(img);

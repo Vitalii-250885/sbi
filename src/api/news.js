@@ -42,11 +42,14 @@ export const fetchMessagePresedent = async () => {
 
   console.log(res.data.results);
 
-  return res.data.results;
+  return res.data.results[0];
 };
 
 export const fetchHistory = async () => {
-  const res = await axios("/history", options);
+  const res = await axios(
+    "https://8513ef66c3c04b389af686d60bcc6fed.api.mockbin.io/",
+    options
+  );
 
-  return res.data.history;
+  return res.data.results[0];
 };
