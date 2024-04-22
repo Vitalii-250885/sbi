@@ -1,58 +1,31 @@
-import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-import { fetchNews } from "../../api/news";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import Loader from "../../components/loader/Loader";
 
 import css from "./NewsDetailsPage.module.css";
+
+import news from "../../news.json";
 
 const NewsDetailsPage = () => {
   const { newsId } = useParams();
 
-  const [image, setImage] = useState("");
-  const [date, setDate] = useState("");
-  const [title, setTitle] = useState("");
-  const [text, setText] = useState("");
-  const [loader, setLoader] = useState(false);
-
-  useEffect(() => {
-    const load = async () => {
-      try {
-        setLoader(true);
-
-        const resData = await fetchNews(newsId);
-        const { img, date, title, text } = resData;
-
-        setImage(img);
-        setDate(date);
-        setTitle(title);
-        setText(text);
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setLoader(false);
-      }
-    };
-    load();
-  }, [newsId]);
+  const article = news.filter((item) => item.id === newsId);
 
   return (
     <>
       <Header />
       <div className={css.news}>
         <div className={css["news-container"]}>
-          {loader && <Loader />}
-          <img src={`/${image}`} alt="" className={css.image} />
+          <img src={`/${article[0].img}`} alt="" className={css.image} />
           <div className={css["top-article"]}>
-            <p className={css.date}>{date}</p>
+            <p className={css.date}>{article[0].date}</p>
             <Link to="/news" className={css["go-back"]}>
               Назад
             </Link>
           </div>
-          <h2 className={css.title}>{title}</h2>
-          <p className={css.text}>{text}</p>
+          <h2 className={css.title}>{article[0].title}</h2>
+          <p className={css.text}>{article[0].text}</p>
         </div>
       </div>
       <Footer />

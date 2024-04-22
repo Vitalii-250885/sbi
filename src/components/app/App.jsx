@@ -15,15 +15,16 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/news" element={<NewsPage />} />
+
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFoundPage />} />
 
         <Route path="/news/:newsId" element={<ArticlePage />} />
         <Route
-          path="/messagePresedent"
+          path="messagePresedent"
           element={<MessagePresedentDetailsPage />}
         />
-        <Route path="/history" element={<HistoryDetailsPage />} />
+        <Route path="history" element={<HistoryDetailsPage />} />
       </Routes>
     </Suspense>
   );
