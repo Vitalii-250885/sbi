@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+
 import { fetchNews } from "../../api/news";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import Loader from "../../components/loader/Loader";
 
 import css from "./NewsDetailsPage.module.css";
 
@@ -13,16 +15,25 @@ const NewsDetailsPage = () => {
   const [date, setDate] = useState("");
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
+  const [loader, setLoader] = useState(false);
 
   useEffect(() => {
     const load = async () => {
-      const resData = await fetchNews(newsId);
-      const { img, date, title, text } = resData;
+      try {
+        setLoader(true);
 
-      setImage(img);
-      setDate(date);
-      setTitle(title);
-      setText(text);
+        const resData = await fetchNews(newsId);
+        const { img, date, title, text } = resData;
+
+        setImage(img);
+        setDate(date);
+        setTitle(title);
+        setText(text);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoader(false);
+      }
     };
     load();
   }, [newsId]);
@@ -32,6 +43,7 @@ const NewsDetailsPage = () => {
       <Header />
       <div className={css.news}>
         <div className={css["news-container"]}>
+          {loader && <Loader />}
           <img src={`/${image}`} alt="" className={css.image} />
           <div className={css["top-article"]}>
             <p className={css.date}>{date}</p>

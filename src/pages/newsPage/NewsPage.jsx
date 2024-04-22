@@ -11,6 +11,7 @@ const News = () => {
       <Header />
       <div className={css.news}>
         <h2 className={css.title}>Новини</h2>
+
         <ul className={css["news-list"]}>
           <NewsItem />
         </ul>

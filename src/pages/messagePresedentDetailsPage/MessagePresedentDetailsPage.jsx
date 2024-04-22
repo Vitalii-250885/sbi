@@ -5,19 +5,28 @@ import css from "./MessagePresedentDetailsPage.module.css";
 import { useEffect, useState } from "react";
 import { fetchMessagePresedent } from "../../api/news";
 import { Link } from "react-router-dom";
+import Loader from "../../components/loader/Loader";
 
 const MessagePresedentDetailsPage = () => {
   const [image, setImage] = useState("");
   const [text, setText] = useState("");
+  const [loader, setLoader] = useState(false);
 
   useEffect(() => {
     const load = async () => {
-      const resData = await fetchMessagePresedent();
-      const { img, text } = resData;
+      try {
+        setLoader(true);
 
-      setImage(img);
+        const resData = await fetchMessagePresedent();
+        const { img, text } = resData;
 
-      setText(text);
+        setImage(img);
+        setText(text);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoader(false);
+      }
     };
     load();
   }, []);
@@ -33,6 +42,7 @@ const MessagePresedentDetailsPage = () => {
               Назад
             </Link>
           </div>
+          {loader && <Loader />}
           <img src={`/${image}`} alt="" className={css.image} />
           <p className={css.text}>{text}</p>
         </div>

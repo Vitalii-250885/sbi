@@ -5,18 +5,28 @@ import css from "./HistoryDetailsPage.module.css";
 import { useEffect, useState } from "react";
 import { fetchHistory } from "../../api/news";
 import { Link } from "react-router-dom";
+import Loader from "../../components/loader/Loader";
 
 const HistoryDetailsPage = () => {
   const [image, setImage] = useState("");
   const [text, setText] = useState("");
+  const [loader, setLoader] = useState(false);
 
   useEffect(() => {
     const load = async () => {
-      const resData = await fetchHistory();
-      const { img, text } = resData;
+      try {
+        setLoader(true);
 
-      setImage(img);
-      setText(text);
+        const resData = await fetchHistory();
+        const { img, text } = resData;
+
+        setImage(img);
+        setText(text);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoader(false);
+      }
     };
     load();
   }, []);
@@ -32,6 +42,7 @@ const HistoryDetailsPage = () => {
               Назад
             </Link>
           </div>
+          {loader && <Loader />}
           <img src={`/${image}`} alt="" className={css.image} />
           <p className={css.text}>{text}</p>
         </div>
