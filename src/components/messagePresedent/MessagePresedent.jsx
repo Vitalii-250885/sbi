@@ -1,45 +1,32 @@
-import { useEffect, useState } from "react";
 import css from "./MessagePresedent.module.css";
-import { fetchMessagePresedent } from "../../api/news";
+
 import { Link } from "react-router-dom";
-import Loader from "../loader/Loader";
 
 const WordPresedent = () => {
-  const [image, setImage] = useState("");
-  const [text, setText] = useState("");
-  const [name, setName] = useState("");
-  const [loader, setLoader] = useState(false);
-
-  useEffect(() => {
-    const load = async () => {
-      try {
-        setLoader(true);
-
-        const resData = await fetchMessagePresedent();
-        const { img, text, name } = resData;
-
-        setImage(img);
-        setText(text);
-        setName(name);
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setLoader(false);
-      }
-    };
-    load();
-  }, []);
-
   return (
     <div className={css["message-presedent"]}>
       <h3 className={css.title}>Слово президента СБІ</h3>
-      {loader && <Loader />}
-      {!loader && (
-        <div className={css.article}>
-          <img src={image} alt={name} className={css.photo} />
-          <p className={css.text}>{text}</p>
-        </div>
-      )}
+
+      <div className={css.article}>
+        <img src="IMG_0222_small.jpg" alt="Дерек Томас" className={css.photo} />
+        <p className={css.text}>
+          <p>
+            «Слов’янський Баптистський Інститут(СБІ) був заснований в лютому
+            1996 року. Кінцева мета СБІ – прославити Бога. Ми можемо славити
+            Бога, коли Його діти вивчають Слово Боже, вірять у Нього та
+            застосовують це у життя. Ми бажаємо, щоб кожен студент СБІ після
+            кожної сесії повертався до своєї церкви з більш глибоким розумінням
+            Писання та сильнішим бажанням служити Господу.
+          </p>
+          <p>
+            Для нас це велика привілея та радість Служити разом нашому великому
+            Богу та допомагати помісним церквам в Україні».
+          </p>
+          <p>Дерек Томас</p>
+          <p>Президент Слов’янського Баптистського Інституту</p>
+        </p>
+      </div>
+
       <Link to="/messagePresedent" className={css["read-more"]}>
         Читати більше
       </Link>

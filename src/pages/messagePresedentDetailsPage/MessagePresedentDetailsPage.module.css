@@ -105,3 +105,12 @@
 .text {
   text-align: justify;
 }
+
+.paragraph {
+  margin-bottom: 10px;
+}
+
+.sign {
+  text-align: end;
+  font-style: italic;
+}
