@@ -27,13 +27,13 @@ const MessagePresedentDetailsPage = () => {
       <Header />
       <div className={css["message-presedent"]}>
         <div className={css["message-presedent-container"]}>
-          <img src={`/${image}`} alt="" className={css.image} />
           <div className={css["top-article"]}>
             <h3 className={css.title}>Слово президента СБІ</h3>
             <Link to="/about" className={css["go-back"]}>
-              ← Назад
+              Назад
             </Link>
           </div>
+          <img src={`/${image}`} alt="" className={css.image} />
           <p className={css.text}>{text}</p>
         </div>
       </div>

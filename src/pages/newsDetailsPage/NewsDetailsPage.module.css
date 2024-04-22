@@ -22,7 +22,7 @@
 
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px;
+  box-shadow: 5px 5px 10px grey;
 
   @media screen and (min-width: 768px) {
     display: block;

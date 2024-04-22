@@ -26,13 +26,13 @@ const HistoryDetailsPage = () => {
       <Header />
       <div className={css.history}>
         <div className={css["history-container"]}>
-          <img src={`/${image}`} alt="" className={css.image} />
           <div className={css["top-article"]}>
             <h3 className={css.title}>Історія СБІ</h3>
             <Link to="/about" className={css["go-back"]}>
-              ← Назад
+              Назад
             </Link>
           </div>
+          <img src={`/${image}`} alt="" className={css.image} />
           <p className={css.text}>{text}</p>
         </div>
       </div>
