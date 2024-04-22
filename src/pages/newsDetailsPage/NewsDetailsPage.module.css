@@ -11,15 +11,15 @@
     padding: 110px 20px 20px 20px;
 
     height: 100%;
-
-    background-color: #f2f2f2;
   }
 }
 
 .news-container {
   display: flex;
   flex-direction: column;
+
   padding: 10px;
+
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 5px 5px 10px;
@@ -30,10 +30,10 @@
 
   @media screen and (min-width: 1200px) {
     display: block;
+
     padding: 20px;
-    background-color: #ffffff;
+
     border-radius: 20px;
-    box-shadow: 5px 5px 10px;
   }
 }
 
@@ -54,11 +54,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 600px;
     float: left;
     margin: 0 10px 10px 0;
 
-    border: 2px solid #212063;
     border-top-left-radius: 20px;
     border-top-right-radius: 0px;
   }
@@ -96,6 +94,7 @@
   font-size: 20px;
 
   @media screen and (min-width: 768px) {
+    font-size: 26px;
   }
 
   @media screen and (min-width: 1200px) {

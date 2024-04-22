@@ -1,24 +1,38 @@
 .message-presedent {
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 20px;
-  width: 50%;
+  padding: 10px;
 
   border-radius: 10px;
 
   background-color: #ffffff;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    width: 50%;
+  }
 }
 
 .title {
-  display: flex;
-
   margin-bottom: 10px;
 
   font-family: "Russo One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .photo {

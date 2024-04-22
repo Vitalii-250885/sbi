@@ -23,7 +23,7 @@ const Team = () => {
           <img src="/DAS03987_small.jpg" alt="" className={css.image} />
           <p className={css.name}>Парфенюк</p>
           <p className={css.name}>Павло Васильович</p>
-          <p>Перекладач, викладач</p>
+          <p>Викладач, Перекладач</p>
         </li>
         <li className={css["team-item"]}>
           <img
