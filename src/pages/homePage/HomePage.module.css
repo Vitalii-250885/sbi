@@ -3,7 +3,7 @@
   padding: 10px;
 
   background-color: #212063;
-  background-image: url(/Background-image.jpg);
+  background-image: url(/Background-image2.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,6 +38,8 @@
   left: calc(50% - 125px);
   width: 250px;
   height: 250px;
+  opacity: 1;
+  z-index: 3;
 
   @media screen and (min-width: 768px) {
     position: static;
@@ -95,30 +97,6 @@
     text-align: right;
     font-size: 80px;
   }
-}
-
-.verses-container {
-  width: 90%;
-  padding: 20px;
-  border-radius: 10px;
-
-  color: #212063;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.verse {
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.verse:last-child {
-  margin-top: 0;
-}
-
-.reference {
-  text-align: end;
-  font-size: 20px;
-  font-style: italic;
 }
 
 .button {
