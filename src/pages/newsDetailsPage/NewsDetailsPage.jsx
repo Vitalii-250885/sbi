@@ -36,7 +36,7 @@ const NewsDetailsPage = () => {
           <div className={css["top-article"]}>
             <p className={css.date}>{date}</p>
             <Link to="/news" className={css["go-back"]}>
-              ← Назад
+              Назад
             </Link>
           </div>
           <h2 className={css.title}>{title}</h2>
