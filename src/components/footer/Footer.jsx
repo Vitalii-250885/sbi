@@ -14,14 +14,12 @@ const Footer = () => {
             <img src="instagram.png" alt="Instagram" className={css.icon} />
           </a>
         </li>
-        {/* <li className={css["contacts-item"]}>
-          <img
-            src="/png-clipart-telephone-call-computer-icons-symbol-telephone-icon-miscellaneous-logo-thumbnail.png"
-            alt="Phone"
-            className={css.icon}
-          />
-        </li>
         <li className={css["contacts-item"]}>
+          <a href="tel:+380683689307">
+            <img src="phone.png" alt="Phone" className={css.icon} />
+          </a>
+        </li>
+        {/* <li className={css["contacts-item"]}>
           <img src="/email.png" alt="mail" className={css.icon} />
         </li> */}
       </ul>
