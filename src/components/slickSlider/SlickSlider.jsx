@@ -16,6 +16,8 @@ const SlickSlider = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
+    adaptiveHeight: true,
   };
   return (
     <div className={css.testimonials}>

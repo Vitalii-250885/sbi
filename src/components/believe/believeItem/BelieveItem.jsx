@@ -5,7 +5,7 @@ const BelieveItem = ({ id, item }) => {
     <>
       <li key={id} className={css.item}>
         <span className={css.marker}>✔</span>
-        <span className={css.text}>{item}</span>
+        <span>{item}</span>
       </li>
     </>
   );

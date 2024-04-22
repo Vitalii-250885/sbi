@@ -3,11 +3,11 @@ import Team from "../team/Team";
 import Believe from "../believe/Believe";
 import Program from "../program/Program";
 import MessagePresedent from "../messagePresedent/MessagePresedent";
+import SlickSlider from "../slickSlider/SlickSlider";
 
 import css from "./About.module.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import SlickSlider from "../slickSlider/SlickSlider";
 
 const About = () => {
   return (

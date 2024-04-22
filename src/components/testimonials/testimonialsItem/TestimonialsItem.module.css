@@ -1,9 +1,6 @@
 .item {
+  width: 100%;
   margin-bottom: 30px;
-}
-
-.item:last-child {
-  margin-bottom: 0;
 }
 
 .photo {
