@@ -19,9 +19,11 @@ const Footer = () => {
             <img src="phone.png" alt="Phone" className={css.icon} />
           </a>
         </li>
-        {/* <li className={css["contacts-item"]}>
-          <img src="/email.png" alt="mail" className={css.icon} />
-        </li> */}
+        <li className={css["contacts-item"]}>
+          <a href="mailto:">
+            <img src="mail.png" alt="mail" className={css.icon} />
+          </a>
+        </li>
       </ul>
     </div>
   );
