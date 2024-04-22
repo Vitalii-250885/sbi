@@ -20,10 +20,10 @@ function App() {
 
         <Route path="/news/:newsId" element={<ArticlePage />} />
         <Route
-          path="/about/messagePresedent"
+          path="/messagePresedent"
           element={<MessagePresedentDetailsPage />}
         />
-        <Route path="/about/history" element={<HistoryDetailsPage />} />
+        <Route path="/history" element={<HistoryDetailsPage />} />
       </Routes>
     </Suspense>
   );
