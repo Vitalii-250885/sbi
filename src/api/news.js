@@ -9,7 +9,7 @@ const options = {
 
 export const fetchNews = async (newsId) => {
   const res = await axios(
-    `https://a58e8714b3314a308149aa440a61b107.api.mockbin.io/${newsId}`,
+    `https://9745efa08bab4d358255b946dbb79f68.api.mockbin.io/${newsId}`,
     options
   );
 
@@ -27,7 +27,7 @@ export const fetchNews = async (newsId) => {
 
 export const fetchAllNews = async () => {
   const res = await axios(
-    "https://a58e8714b3314a308149aa440a61b107.api.mockbin.io/",
+    "https://9745efa08bab4d358255b946dbb79f68.api.mockbin.io/",
     options
   );
 
