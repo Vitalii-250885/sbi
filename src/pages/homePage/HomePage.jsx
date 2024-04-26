@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <header className={css["header-page"]}>
         <img src="/logo-2.png" alt="logo" className={css.logo} />
         <div className={css["title-options"]}>
@@ -19,7 +19,7 @@ const HomePage = () => {
           </nav>
         </div>
       </header>
-    </div>
+    </>
   );
 };
 
