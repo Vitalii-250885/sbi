@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className={css.header}>
       <Link to="/">
-        <img src="/logo.png" alt="logo" className={css.logo} />
+        <img src="/logo-2.png" alt="logo" className={css.logo} />
       </Link>
 
       <div className={css["title-options"]}>
