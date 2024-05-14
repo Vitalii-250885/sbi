@@ -2,9 +2,9 @@ import css from "./Appearance.module.css";
 
 const Appearance = () => {
   return (
-    <div className={css.requirements}>
+    <div className={css.appearance}>
       <h3 className={css.title}>Зовнішній вигляд</h3>
-      <h4>Брати:</h4>
+      <h4 className={css.subtitle}>Брати:</h4>
       <ol>
         <li>Сорочки мають бути завжди з комірцями;</li>
         <li>Не дозволяється під час занять носити джинси;</li>
@@ -15,7 +15,7 @@ const Appearance = () => {
         </li>
       </ol>
 
-      <h4>Сестри:</h4>
+      <h4 className={css.subtitle}>Сестри:</h4>
       <ol>
         <li>Замужні жінки повинні покривати голову платком;</li>
         <li>Блузка повинна мати достатньо довгі рукави;</li>
@@ -27,7 +27,9 @@ const Appearance = () => {
         <li>Взагалі забороняється носити штани – лише спідниці та сукні.</li>
       </ol>
 
-      <h4>Причини того, чому ми повинні так одягатися:</h4>
+      <h4 className={css.subtitle}>
+        Причини того, чому ми повинні так одягатися:
+      </h4>
       <ol>
         <li>
           Ми – християни! Християни повинні виглядати, як християни! Світ

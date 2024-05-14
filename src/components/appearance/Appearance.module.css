@@ -1,4 +1,4 @@
-.requirements {
+.appearance {
   margin-top: 20px;
   padding: 10px;
 
@@ -29,6 +29,15 @@
   @media screen and (min-width: 1200px) {
     font-size: 20px;
   }
+}
+
+.subtitle {
+  margin-top: 10px;
+
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
 }
 
 .list {
