@@ -25,6 +25,9 @@ const Header = () => {
           <NavLink to="/about" className={buildLinkClass}>
             Про нас
           </NavLink>
+          <NavLink to="/applicants" className={buildLinkClass}>
+            Абітурієнтам
+          </NavLink>
         </nav>
       </div>
     </header>

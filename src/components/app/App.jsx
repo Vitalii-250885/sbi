@@ -4,6 +4,7 @@ import ArticlePage from "../../pages/newsDetailsPage/NewsDetailsPage";
 import NewsPage from "../../pages/newsPage/NewsPage";
 import NotFoundPage from "../../pages/notFoundPage/NotFoundPage";
 import About from "../about/About";
+import ApplicantsPage from "../../pages/applicantsPage/ApplicantsPage";
 
 import { Route, Routes } from "react-router-dom";
 import MessagePresedentDetailsPage from "../../pages/messagePresedentDetailsPage/MessagePresedentDetailsPage";
@@ -15,10 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/news" element={<NewsPage />} />
-
         <Route path="/about" element={<About />} />
+        <Route path="/applicants" element={<ApplicantsPage />} />
         <Route path="*" element={<NotFoundPage />} />
-
         <Route path="/news/:newsId" element={<ArticlePage />} />
         <Route
           path="messagePresedent"

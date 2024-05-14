@@ -1,0 +1,32 @@
+.applicants {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 10px 40px 10px;
+
+  background-color: #f2f2f2;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    height: 100%;
+  }
+}
+
+.title {
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 34px;
+  }
+}

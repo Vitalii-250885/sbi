@@ -16,6 +16,9 @@ const HomePage = () => {
             <NavLink to="/about" className={css.button}>
               Про нас
             </NavLink>
+            <NavLink to="/applicants" className={css.button}>
+              Абітурієнтам
+            </NavLink>
           </nav>
         </div>
       </header>
