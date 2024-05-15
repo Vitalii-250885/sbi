@@ -8,7 +8,11 @@ const WordPresedent = () => {
       <h3 className={css.title}>Слово президента СБІ</h3>
 
       <div className={css.article}>
-        <img src="IMG_0222_small.jpg" alt="Дерек Томас" className={css.photo} />
+        <img
+          src="img/about/messagePresedent/IMG_0222_small.jpg"
+          alt="Дерек Томас"
+          className={css.photo}
+        />
         <p className={css.text}>
           <p>
             «Слов’янський Баптистський Інститут(СБІ) був заснований в лютому

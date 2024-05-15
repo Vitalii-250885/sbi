@@ -38,6 +38,8 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
+  object-fit: cover;
+
   @media screen and (min-width: 768px) {
   }
 

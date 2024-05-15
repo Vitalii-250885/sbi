@@ -13,13 +13,6 @@
 
   @media screen and (min-width: 1200px) {
     width: 350px;
-    padding: 20px;
-    margin-top: 20px;
-
-    border-radius: 10px;
-
-    background-color: #ffffff;
-    box-shadow: 5px 5px 10px grey;
   }
 }
 

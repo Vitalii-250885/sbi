@@ -3,7 +3,7 @@ import HomePage from "../../pages/homePage/HomePage";
 import ArticlePage from "../../pages/newsDetailsPage/NewsDetailsPage";
 import NewsPage from "../../pages/newsPage/NewsPage";
 import NotFoundPage from "../../pages/notFoundPage/NotFoundPage";
-import About from "../about/About";
+import AboutPage from "../../pages/aboutPage/AboutPage";
 import ApplicantsPage from "../../pages/applicantsPage/ApplicantsPage";
 
 import { Route, Routes } from "react-router-dom";
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/news" element={<NewsPage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/applicants" element={<ApplicantsPage />} />
         <Route path="*" element={<NotFoundPage />} />
         <Route path="/news/:newsId" element={<ArticlePage />} />

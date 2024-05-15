@@ -19,8 +19,8 @@ const HistoryDetailsPage = () => {
           </div>
 
           <img
-            src="IMG_2650_small.jpg"
-            alt="Ніл Кедвел"
+            src="img/about/history/IMG_2650_small.jpg"
+            alt="Ніл Кедвіл"
             className={css.image}
           />
           <p className={css.text}>

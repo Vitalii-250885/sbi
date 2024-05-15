@@ -19,7 +19,7 @@ const MessagePresedentDetailsPage = () => {
           </div>
 
           <img
-            src="IMG_0222_small.jpg"
+            src="img/about/messagePresedent/IMG_0222_small.jpg"
             alt="Дерек Томас"
             className={css.image}
           />

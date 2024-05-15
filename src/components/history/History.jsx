@@ -7,7 +7,11 @@ const History = () => {
       <h3 className={css.title}>Історія СБІ</h3>
 
       <div className={css.article}>
-        <img src="IMG_2650_small.jpg" alt="Ніл Кедвіл" className={css.image} />
+        <img
+          src="img/about/history/IMG_2650_small.jpg"
+          alt="Ніл Кедвіл"
+          className={css.image}
+        />
         <p className={css.text}>
           <p>
             Ще на початку серпня 1991 року, наш дорогий брат – євангеліст та
