@@ -42,11 +42,7 @@ const Team = () => {
           <p>Секретар</p>
         </li>
         <li className={css["team-item"]}>
-          <img
-            src="/depositphotos_133351928-stock-illustration-default-placeholder-man-and-woman.jpg"
-            alt=""
-            className={css.image}
-          />
+          <img src="/vitalii_small.jpg" alt="" className={css.image} />
           <p className={css.name}>Процько</p>
           <p className={css.name}>Віталій Олександрович</p>
           <p>Музичний керівник</p>

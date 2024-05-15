@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <header className={css["header-page"]}>
-        <img src="/logo-2.png" alt="logo" className={css.logo} />
+        <img src="/img/homePage/logo-2.png" alt="logo" className={css.logo} />
         <div className={css["title-options"]}>
           <h1 className={css.title}>{"Слов'янський Баптистський Інститут"}</h1>
 
