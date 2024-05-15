@@ -101,8 +101,30 @@
   }
 }
 
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 512px) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
 .button {
-  margin-right: 20px;
+  width: 150px;
+  margin-bottom: 20px;
   padding: 10px 20px;
 
   font-weight: 700;
@@ -110,10 +132,40 @@
   background-color: #ffffff;
   color: #212063;
 
+  text-align: center;
   text-decoration: none;
   border-radius: 8px;
+
+  @media screen and (min-width: 512px) {
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+  }
 }
 
 .button:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
+  @media screen and (min-width: 512px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
 }

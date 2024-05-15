@@ -2,7 +2,7 @@ import css from "./Finance.module.css";
 
 const Finance = () => {
   return (
-    <div className={css.requirements}>
+    <div className={css.finance}>
       <h3 className={css.title}>Фінансові питання</h3>
       <ol>
         <li>

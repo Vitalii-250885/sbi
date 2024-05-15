@@ -2,7 +2,7 @@ import css from "./Rules.module.css";
 
 const Rules = () => {
   return (
-    <div className={css.requirements}>
+    <div className={css.rules}>
       <h3 className={css.title}>Правила та постанови</h3>
       <ol>
         <li>
