@@ -35,16 +35,11 @@
   }
 }
 
-.article {
-  display: flex;
-  text-align: justify;
-  font-size: 16px;
-}
-
 .image {
+  float: left;
+  margin-right: 10px;
   width: 150px;
   height: 150px;
-  margin-right: 10px;
 
   border-radius: 5px;
 }
