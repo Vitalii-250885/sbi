@@ -9,6 +9,7 @@ import ApplicantsPage from "../../pages/applicantsPage/ApplicantsPage";
 import { Route, Routes } from "react-router-dom";
 import MessagePresedentDetailsPage from "../../pages/messagePresedentDetailsPage/MessagePresedentDetailsPage";
 import HistoryDetailsPage from "../../pages/historyDetailsPage/HistoryDetailsPage";
+import ContactsPage from "../../pages/contactsPage/ContactsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/applicants" element={<ApplicantsPage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
         <Route path="*" element={<NotFoundPage />} />
         <Route path="/events/:eventId" element={<ArticlePage />} />
         <Route

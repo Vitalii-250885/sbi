@@ -41,9 +41,12 @@ const Header = () => {
           <NavLink to="/about" className={buildLinkClass}>
             Про нас
           </NavLink>
-          <NavLink to="/applicants" className={buildLinkClass}>
+          {/* <NavLink to="/applicants" className={buildLinkClass}>
             Абітурієнтам
-          </NavLink>
+          </NavLink> */}
+          {/* <NavLink to="/contacts" className={buildLinkClass}>
+            Контакти
+          </NavLink> */}
         </nav>
         <div
           className={clsx(
@@ -66,12 +69,12 @@ const Header = () => {
             <NavLink to="/about" className={buildLinkClass} onClick={closeMenu}>
               Про нас
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/applicants"
               className={buildLinkClass}
               onClick={closeMenu}>
               Абітурієнтам
-            </NavLink>
+            </NavLink> */}
           </nav>
         </div>
       </div>

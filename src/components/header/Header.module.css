@@ -121,6 +121,11 @@
   margin-right: 0;
 }
 
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .active {
   padding: 3px 10px;
   background-color: #ffffff;
