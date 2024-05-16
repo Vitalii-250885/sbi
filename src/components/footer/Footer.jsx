@@ -3,7 +3,7 @@ import css from "./Footer.module.css";
 const Footer = () => {
   return (
     <div className={css.footer}>
-      <ul className={css["contacts-list"]}>
+      {/* <ul className={css["contacts-list"]}>
         <li className={css["contacts-item"]}>
           <a href="https://www.facebook.com/sbiukraine?locale=uk_UA">
             <img
@@ -32,7 +32,7 @@ const Footer = () => {
             <img src="/img/footer/mail.png" alt="mail" className={css.icon} />
           </a>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 };

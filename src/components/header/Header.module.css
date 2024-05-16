@@ -4,6 +4,7 @@
   top: 0;
 
   display: flex;
+  justify-content: flex-end;
   height: 40px;
   width: 100%;
 
@@ -70,22 +71,66 @@
 }
 
 .options {
-  display: flex;
-  justify-content: flex-end;
+  display: none;
 
-  width: 90%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 90%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 90%;
+  }
 }
 
 .button {
-  margin-right: 20px;
+  width: 70%;
+  height: 35px;
+  margin-bottom: 20px;
 
   padding: 3px 10px;
   border: 3px solid #ffffff;
   background-color: #212063;
   color: #ffffff;
 
+  text-align: center;
   text-decoration: none;
   border-radius: 8px;
+
+  @media screen and (min-width: 768px) {
+    width: 130px;
+    margin-bottom: 0;
+    margin-right: 20px;
+
+    padding: 3px 10px;
+    border: 3px solid #ffffff;
+    background-color: #212063;
+    color: #ffffff;
+
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 130px;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+    padding: 3px 10px;
+    border: 3px solid #ffffff;
+    background-color: #212063;
+    color: #ffffff;
+
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+  }
 }
 
 .button:last-child {
@@ -96,4 +141,76 @@
   padding: 3px 10px;
   background-color: #ffffff;
   color: #212063;
+}
+
+.boorger {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+
+  right: 20px;
+
+  fill: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.cansel {
+  position: absolute;
+
+  right: 20px;
+  top: 20px;
+
+  height: 30px;
+  width: 30px;
+  fill: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  background-color: rgba(33, 32, 99, 0.8);
+
+  z-index: 99999;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.open-mobile-menu {
+  left: 0;
+}
+
+.mobile-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
 }

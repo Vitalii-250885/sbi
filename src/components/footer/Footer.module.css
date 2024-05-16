@@ -1,6 +1,4 @@
 .footer {
-  position: fixed;
-
   left: 0;
   bottom: 0;
 
@@ -12,31 +10,6 @@
   height: 20px;
 
   background-color: #212063;
-}
 
-.footer:hover {
-  height: 70px;
-}
-
-.footer:hover .icon {
-  width: 60px;
-  margin-right: 10px;
-}
-
-.contacts-list {
-  display: flex;
-}
-
-.contacts-item {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.contacts-item:last-child {
-  margin-right: 0;
-}
-
-.icon {
-  width: 20px;
+  z-index: 99;
 }

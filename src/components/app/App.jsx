@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import HomePage from "../../pages/homePage/HomePage";
-import ArticlePage from "../../pages/newsDetailsPage/NewsDetailsPage";
-import NewsPage from "../../pages/newsPage/NewsPage";
+import ArticlePage from "../../pages/eventsDetailsPage/EventsDetailsPage";
+import EventsPage from "../../pages/eventsPage/EventsPage";
 import NotFoundPage from "../../pages/notFoundPage/NotFoundPage";
 import AboutPage from "../../pages/aboutPage/AboutPage";
 import ApplicantsPage from "../../pages/applicantsPage/ApplicantsPage";
@@ -15,11 +15,11 @@ function App() {
     <Suspense>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/news" element={<NewsPage />} />
+        <Route path="/events" element={<EventsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/applicants" element={<ApplicantsPage />} />
         <Route path="*" element={<NotFoundPage />} />
-        <Route path="/news/:newsId" element={<ArticlePage />} />
+        <Route path="/events/:eventId" element={<ArticlePage />} />
         <Route
           path="messagePresedent"
           element={<MessagePresedentDetailsPage />}

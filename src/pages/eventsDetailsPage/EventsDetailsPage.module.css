@@ -1,4 +1,4 @@
-.news {
+.events {
   padding: 50px 10px 30px 10px;
 
   background-color: #f2f2f2;
@@ -12,7 +12,7 @@
   }
 }
 
-.news-container {
+.events-container {
   display: flex;
   flex-direction: column;
 
@@ -63,6 +63,14 @@
 .date {
   font-size: 14px;
   color: #777777;
+}
+
+.category {
+  display: inline;
+  height: 20px;
+  /* width: 20%; */
+
+  margin-left: -10px;
 }
 
 .top-article {
