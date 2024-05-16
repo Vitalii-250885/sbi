@@ -34,9 +34,6 @@ const Header = () => {
       </div>
 
       <div className={css["title-options"]}>
-        <h1 className={css["header-title"]}>
-          {"Слов'янський Баптистський Інститут"}
-        </h1>
         <nav className={css.options}>
           <NavLink to="/events" className={buildLinkClass}>
             Події

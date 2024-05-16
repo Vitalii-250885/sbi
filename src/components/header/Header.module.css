@@ -21,7 +21,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 90px;
+    height: 60px;
 
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -40,24 +40,8 @@
 
   @media screen and (min-width: 1200px) {
     display: block;
-    width: 99px;
-    height: 90px;
-  }
-}
-
-.header-title {
-  display: none;
-
-  @media screen and (min-width: 1200px) {
-    display: block;
-
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-
-    color: #ffffff;
+    width: 69px;
+    height: 60px;
   }
 }
 

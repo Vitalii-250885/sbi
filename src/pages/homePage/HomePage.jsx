@@ -24,14 +24,30 @@ const HomePage = () => {
           </p>
         </div>
       </div>
-      <div className={css.greetengs}>
-        <img src="/img/homePage/1.jpg" alt="" className={css.img1} />
-        <img src="/img/homePage/2.jpg" alt="" className={css.img1} />
-        <img src="/img/homePage/3.jpg" alt="" className={css.img1} />
-        <img src="/img/homePage/4.jpg" alt="" className={css.img1} />
+      <div className={css.main}>
+        <div className={css.greeting}>
+          <h2 className={css["greeting-title"]}>
+            Вітаємо тебе, дорогий друже!
+          </h2>
+          <p className={css["greeting-text"]}>
+            Ми дуже раді, що ти завітав до нас! Тут ти знайдеш всю інформацію
+            про інститут, процес навчання, практику, події та служіння
+          </p>
+          <p className={css["greeting-invitation"]}>
+            Будемо дуже раді бачити тебе у рядах наших студентів!
+          </p>
+        </div>
+        <div className={css.photos}>
+          <div className={css["left-fotos"]}>
+            <img src="/img/homePage/1.jpg" alt="" className={css.img1} />
+            <img src="/img/homePage/3.jpg" alt="" className={css.img3} />
+          </div>
+          <img src="/img/homePage/2.jpg" alt="" className={css.img2} />
+          {/* <img src="/img/homePage/4.jpg" alt="" className={css.img4} /> */}
+        </div>
       </div>
-      <div className={css["contacts-options"]}>
-        <ul className={css["contacts-list"]}>
+      {/* <div className={css["contacts-options"]}> */}
+      {/* <ul className={css["contacts-list"]}>
           <li className={css["contacts-item"]}>
             <a href="https://www.facebook.com/sbiukraine?locale=uk_UA">
               <img
@@ -64,8 +80,8 @@ const HomePage = () => {
               <img src="/img/footer/mail.png" alt="mail" className={css.icon} />
             </a>
           </li>
-        </ul>
-      </div>
+        </ul> */}
+      {/* </div> */}
     </div>
   );
 };
