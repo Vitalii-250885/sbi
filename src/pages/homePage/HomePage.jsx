@@ -1,31 +1,17 @@
+import Options from "../../components/options/Options";
+
 import css from "./HomePage.module.css";
-import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className={css["header-page"]}>
+    <div className={css["home-page"]}>
       <img src="/img/homePage/logo-2.png" alt="logo" className={css.logo} />
-      <div>
-        <nav className={css.options}>
-          <NavLink to="/events" className={css.button}>
-            Події
-          </NavLink>
-          <NavLink to="/about" className={css.button}>
-            Про нас
-          </NavLink>
-          {/* <NavLink to="/applicants" className={css.button}>
-            Абітурієнтам
-          </NavLink> */}
-          {/* <NavLink to="/contacts" className={css.button}>
-            Контакти
-          </NavLink> */}
-        </nav>
-        <div className={css["title-subtitle"]}>
-          <h1 className={css.title}>{"Слов'янський Баптистський Інститут"}</h1>
-          <p className={css.subtitle}>
-            Підготовка працівників для Господніх жнив з 1996р.
-          </p>
-        </div>
+      <Options />
+      <div className={css["title-subtitle"]}>
+        <h1 className={css.title}>{"Слов'янський Баптистський Інститут"}</h1>
+        <p className={css.subtitle}>
+          Підготовка працівників для Господніх жнив з 1996р.
+        </p>
       </div>
       <div className={css.main}>
         <div className={css.photos}>

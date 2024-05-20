@@ -1,8 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-
 import css from "./EventsDetailsPage.module.css";
 
 import events from "../../events.json";
@@ -20,7 +17,6 @@ const NewsDetailsPage = () => {
 
   return (
     <>
-      <Header />
       <div className={css.events}>
         <div className={css["events-container"]}>
           <img src={`/${img}`} alt="" className={css.image} />
@@ -37,7 +33,6 @@ const NewsDetailsPage = () => {
           <p className={css.text}>{text}</p>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

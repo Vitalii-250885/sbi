@@ -1,12 +1,8 @@
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-
 import css from "./ContactsPage.module.css";
 
 const ContactsPage = () => {
   return (
     <>
-      <Header />
       <div className={css.contacts}>
         <div className={css["contacts-options"]}>
           <h2 className={css.title}>Контакти</h2>
@@ -55,7 +51,6 @@ const ContactsPage = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

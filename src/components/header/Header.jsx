@@ -1,15 +1,13 @@
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import Options from "../options/Options";
 
 import clsx from "classix";
 import css from "./Header.module.css";
-import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const buildLinkClass = ({ isActive }) => {
-    return clsx(css.button, isActive && css.active);
-  };
 
   const openMenu = () => {
     setIsOpen(true);
@@ -34,20 +32,7 @@ const Header = () => {
       </div>
 
       <div className={css["title-options"]}>
-        <nav className={css.options}>
-          <NavLink to="/events" className={buildLinkClass}>
-            Події
-          </NavLink>
-          <NavLink to="/about" className={buildLinkClass}>
-            Про нас
-          </NavLink>
-          {/* <NavLink to="/applicants" className={buildLinkClass}>
-            Абітурієнтам
-          </NavLink> */}
-          {/* <NavLink to="/contacts" className={buildLinkClass}>
-            Контакти
-          </NavLink> */}
-        </nav>
+        {window.screen.width > 768 && <Options />}
         <div
           className={clsx(
             css["mobile-menu"],
@@ -59,26 +44,7 @@ const Header = () => {
             className={css.cansel}
             onClick={closeMenu}
           />
-          <nav className={css["mobile-options"]}>
-            <NavLink
-              to="/events"
-              className={buildLinkClass}
-              onClick={closeMenu}>
-              Події
-            </NavLink>
-            <NavLink to="/about" className={buildLinkClass} onClick={closeMenu}>
-              Про нас
-            </NavLink>
-            {/* <NavLink
-              to="/applicants"
-              className={buildLinkClass}
-              onClick={closeMenu}>
-              Абітурієнтам
-            </NavLink> */}
-            {/* <NavLink to="/contacts" className={buildLinkClass}>
-              Контакти
-            </NavLink> */}
-          </nav>
+          <Options />
         </div>
       </div>
     </header>

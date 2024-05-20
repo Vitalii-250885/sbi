@@ -1,6 +1,3 @@
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-
 import css from "./MessagePresedentDetailsPage.module.css";
 
 import { Link } from "react-router-dom";
@@ -8,7 +5,6 @@ import { Link } from "react-router-dom";
 const MessagePresedentDetailsPage = () => {
   return (
     <>
-      <Header />
       <div className={css["message-presedent"]}>
         <div className={css["message-presedent-container"]}>
           <div className={css["top-article"]}>
@@ -43,7 +39,6 @@ const MessagePresedentDetailsPage = () => {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

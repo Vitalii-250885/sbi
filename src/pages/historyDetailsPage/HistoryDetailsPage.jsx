@@ -1,14 +1,10 @@
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
+import { Link } from "react-router-dom";
 
 import css from "./HistoryDetailsPage.module.css";
-
-import { Link } from "react-router-dom";
 
 const HistoryDetailsPage = () => {
   return (
     <>
-      <Header />
       <div className={css.history}>
         <div className={css["history-container"]}>
           <div className={css["top-article"]}>
@@ -90,7 +86,6 @@ const HistoryDetailsPage = () => {
           <p className={css.sign}>Доктор Ніл Кедвел</p>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
