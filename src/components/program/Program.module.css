@@ -28,14 +28,7 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 30px;
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 20px;
-  }
+  font-size: 20px;
 }
 
 .text {
@@ -68,8 +61,6 @@
   flex-wrap: wrap;
 
   margin-left: 20px;
-
-  list-style-type: "\1F4D6";
 
   @media screen and (min-width: 768px) {
     height: 210px;

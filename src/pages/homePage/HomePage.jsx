@@ -16,6 +16,9 @@ const HomePage = () => {
           {/* <NavLink to="/applicants" className={css.button}>
             Абітурієнтам
           </NavLink> */}
+          {/* <NavLink to="/contacts" className={css.button}>
+            Контакти
+          </NavLink> */}
         </nav>
         <div className={css["title-subtitle"]}>
           <h1 className={css.title}>{"Слов'янський Баптистський Інститут"}</h1>

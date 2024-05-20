@@ -26,14 +26,7 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 30px;
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 20px;
-  }
+  font-size: 20px;
 }
 
 .image {

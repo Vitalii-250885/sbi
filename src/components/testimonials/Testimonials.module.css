@@ -1,39 +1,47 @@
 .testimonials {
   width: 100%;
-  padding: 20px;
   margin-top: 20px;
-
-  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 10px 10px 30px 10px;
 
   background-color: #ffffff;
+  border-radius: 10px;
   box-shadow: 5px 5px 10px grey;
 
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1200px) {
-    width: 350px;
+    margin-top: 40px;
+    padding: 20px 40px 40px 40px;
   }
 }
 
 .title {
   display: flex;
-  flex-direction: row-reverse;
+
+  margin-bottom: 10px;
 
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 30px;
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 20px;
-  }
+  font-size: 20px;
 }
 
-.list {
-  list-style: none;
+.photo {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 10px;
+
+  border-radius: 5px;
+}
+
+.text {
+  text-align: justify;
+  margin-right: 5px;
+}
+
+.name {
+  margin: 5px 20px 0 0;
+  text-align: right;
+  font-style: italic;
 }

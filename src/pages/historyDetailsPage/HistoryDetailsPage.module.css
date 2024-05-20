@@ -67,15 +67,7 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 50px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 26px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 34px;
-  }
+  font-size: 20px;
 }
 
 .go-back {

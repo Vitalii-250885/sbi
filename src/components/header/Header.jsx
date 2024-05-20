@@ -75,6 +75,9 @@ const Header = () => {
               onClick={closeMenu}>
               Абітурієнтам
             </NavLink> */}
+            {/* <NavLink to="/contacts" className={buildLinkClass}>
+              Контакти
+            </NavLink> */}
           </nav>
         </div>
       </div>
