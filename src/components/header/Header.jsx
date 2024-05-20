@@ -44,7 +44,7 @@ const Header = () => {
             className={css.cansel}
             onClick={closeMenu}
           />
-          <Options />
+          <Options closeMenu={closeMenu} />
         </div>
       </div>
     </header>
