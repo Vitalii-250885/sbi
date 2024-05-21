@@ -1,0 +1,11 @@
+.counter {
+  display: none;
+
+  @media screen and (min-width: 777px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 778px) {
+    display: none;
+  }
+}

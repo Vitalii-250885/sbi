@@ -6,6 +6,7 @@ import MessagePresedent from "../../components/messagePresedent/MessagePresedent
 import Testimonials from "../../components/testimonials/Testimonials";
 
 import css from "./AboutPage.module.css";
+import Counter from "../../components/counter/Counter";
 
 const About = () => {
   return (
@@ -20,6 +21,7 @@ const About = () => {
         <Believe />
         <Program />
         <Testimonials />
+        <Counter />
       </div>
     </>
   );
