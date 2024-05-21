@@ -32,7 +32,7 @@ const Header = () => {
       </div>
 
       <div className={css["title-options"]}>
-        {window.screen.width > 768 && <Options />}
+        <Options isAlwaysVisible={false} />
         <div
           className={clsx(
             css["mobile-menu"],
@@ -44,7 +44,7 @@ const Header = () => {
             className={css.cansel}
             onClick={closeMenu}
           />
-          <Options closeMenu={closeMenu} />
+          <Options closeMenu={closeMenu} isAlwaysVisible={true} />
         </div>
       </div>
     </header>

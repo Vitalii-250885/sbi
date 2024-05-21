@@ -3,13 +3,17 @@ import { NavLink } from "react-router-dom";
 import clsx from "classix";
 import css from "./Options.module.css";
 
-const Options = ({ closeMenu }) => {
+const Options = ({ closeMenu, isAlwaysVisible }) => {
   const buildLinkClass = ({ isActive }) => {
     return clsx(css.button, isActive && css.active);
   };
 
+  const buildVisibleOptions = () => {
+    return isAlwaysVisible ? "mobile-options" : "main-options";
+  };
+
   return (
-    <nav className={css.options}>
+    <nav className={css[`${buildVisibleOptions()}`]}>
       <NavLink to="/events" className={buildLinkClass} onClick={closeMenu}>
         Події
       </NavLink>
