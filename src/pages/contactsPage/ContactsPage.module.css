@@ -69,3 +69,7 @@
   transform: scale(0.99);
   cursor: pointer;
 }
+
+.text {
+  margin-top: 20px;
+}

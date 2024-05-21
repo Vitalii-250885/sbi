@@ -30,25 +30,39 @@ const ContactsPage = () => {
               </a>
             </li>
             <li className={css["contacts-item"]}>
+              <a href="mailto:sbi.in.ua@gmail.com">
+                <img
+                  src="/img/footer/mail.png"
+                  alt="mail"
+                  className={css.icon}
+                />
+                sbi.in.ua@gmail.com
+              </a>
+            </li>
+            <li className={css["contacts-item"]}>
               <a href="tel:+380683689307">
                 <img
                   src="/img/footer/phone.png"
                   alt="Phone"
                   className={css.icon}
                 />
-                068-368-93-07 (з 10:00 - 18:00)
+                068-368-93-07
               </a>
             </li>
             <li className={css["contacts-item"]}>
-              <a href="mailto:">
+              <a href="tel:+380996193161">
                 <img
-                  src="/img/footer/mail.png"
-                  alt="mail"
+                  src="/img/footer/phone.png"
+                  alt="Phone"
                   className={css.icon}
                 />
+                099-619-31-61 (Viber, Telegram)
               </a>
             </li>
           </ul>
+          <p className={css.text}>
+            *Дзвінки приймаються Пн-Пт з 10:00 до 18:00
+          </p>
         </div>
       </div>
     </>

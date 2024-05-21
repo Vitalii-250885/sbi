@@ -19,9 +19,9 @@ const Options = ({ closeMenu }) => {
       {/* <NavLink to="/applicants" className={buildLinkClass} onClick={closeMenu}>
             Абітурієнтам
           </NavLink> */}
-      {/* <NavLink to="/contacts" className={buildLinkClass} onClick={closeMenu}>
-            Контакти
-          </NavLink> */}
+      <NavLink to="/contacts" className={buildLinkClass} onClick={closeMenu}>
+        Контакти
+      </NavLink>
     </nav>
   );
 };
