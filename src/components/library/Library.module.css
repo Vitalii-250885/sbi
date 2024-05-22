@@ -1,0 +1,32 @@
+.title {
+  margin: 30px 0 5px 20px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.table {
+  width: 100%;
+}
+
+.head {
+  background-color: #9b9bff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.link {
+  color: #212063;
+}
+
+.rows:nth-child(even) {
+  background-color: #b4daf2;
+}
+
+.cells {
+  padding: 3px 10px;
+
+  text-align: center;
+}

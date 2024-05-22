@@ -10,7 +10,10 @@ import ApplicantsPage from "../pages/applicantsPage/ApplicantsPage";
 import MessagePresedentDetailsPage from "../pages/messagePresedentDetailsPage/MessagePresedentDetailsPage";
 import HistoryDetailsPage from "../pages/historyDetailsPage/HistoryDetailsPage";
 import ContactsPage from "../pages/contactsPage/ContactsPage";
+import UserPage from "../pages/userPage/UserPage";
 import { Layout } from "./Layout";
+import Subjects from "./subjects/Subjects";
+import Library from "./library/Library";
 
 function App() {
   return (
@@ -22,6 +25,10 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/applicants" element={<ApplicantsPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/user" element={<UserPage />}>
+            <Route path="subjects" element={<Subjects />} />
+            <Route path="library" element={<Library />} />
+          </Route>
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/events/:eventId" element={<ArticlePage />} />
           <Route

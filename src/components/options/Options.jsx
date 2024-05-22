@@ -26,6 +26,9 @@ const Options = ({ closeMenu, isAlwaysVisible }) => {
       <NavLink to="/contacts" className={buildLinkClass} onClick={closeMenu}>
         Контакти
       </NavLink>
+      <NavLink to="/user" className={buildLinkClass} onClick={closeMenu}>
+        Юзер
+      </NavLink>
     </nav>
   );
 };

@@ -1,0 +1,125 @@
+.user {
+  padding: 50px 10px 30px 10px;
+
+  background-color: #f2f2f2;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 110px 20px 20px 20px;
+  }
+}
+
+.user-container {
+  padding: 10px;
+  min-height: 260px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px grey;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    min-height: 290px;
+    padding: 20px;
+
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+
+    margin-top: 20px;
+  }
+}
+
+.button {
+  width: 250px;
+  height: 35px;
+  margin-bottom: 20px;
+
+  padding: 3px 10px;
+  border: 3px solid #212063;
+  background-color: #212063;
+  color: #ffffff;
+
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+
+  @media screen and (min-width: 768px) {
+    width: 130px;
+    margin: 3px 20px 3px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+
+    transition: transform 0.2s;
+  }
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.active {
+  padding: 3px 10px;
+  background-color: #ffffff;
+  color: #212063;
+
+  border: 3px solid #212063;
+}
+
+.photo {
+  width: 150px;
+  float: left;
+  margin: 0 10px 10px 0;
+
+  border-top-left-radius: 8px;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    float: left;
+    margin: 0 10px 10px 0;
+
+    border-top-right-radius: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    float: left;
+    margin: 0 10px 10px 0;
+
+    border-top-left-radius: 16px;
+  }
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.text {
+  margin-top: 10px;
+}
