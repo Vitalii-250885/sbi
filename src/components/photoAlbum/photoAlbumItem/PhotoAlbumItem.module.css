@@ -1,0 +1,9 @@
+.photo {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+
+  object-fit: cover;
+
+  box-shadow: 2px 2px 5px;
+}
