@@ -14,6 +14,7 @@ import UserPage from "../pages/userPage/UserPage";
 import { Layout } from "./Layout";
 import Subjects from "./subjects/Subjects";
 import Library from "./library/Library";
+import RegisterPage from "../pages/registerPage/RegisterPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/applicants" element={<ApplicantsPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/user" element={<UserPage />}>
             <Route path="subjects" element={<Subjects />} />
             <Route path="library" element={<Library />} />
