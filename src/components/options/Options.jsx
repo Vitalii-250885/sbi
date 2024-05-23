@@ -26,12 +26,12 @@ const Options = ({ closeMenu, isAlwaysVisible }) => {
       <NavLink to="/contacts" className={buildLinkClass} onClick={closeMenu}>
         Контакти
       </NavLink>
-      <NavLink to="/register" className={buildLinkClass} onClick={closeMenu}>
+      {/* <NavLink to="/register" className={buildLinkClass} onClick={closeMenu}>
         Реєстрація
-      </NavLink>
-      <NavLink to="/user" className={buildLinkClass} onClick={closeMenu}>
+      </NavLink> */}
+      {/* <NavLink to="/user" className={buildLinkClass} onClick={closeMenu}>
         Увійти
-      </NavLink>
+      </NavLink> */}
     </nav>
   );
 };

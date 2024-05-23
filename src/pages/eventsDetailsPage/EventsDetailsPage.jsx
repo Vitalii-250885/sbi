@@ -1,5 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 
+import PhotoAlbum from "../../components/photoAlbum/PhotoAlbum";
+
 import css from "./EventsDetailsPage.module.css";
 
 import events from "../../events.json";
@@ -31,6 +33,7 @@ const NewsDetailsPage = () => {
           </div>
           <h2 className={css.title}>{title}</h2>
           <p className={css.text}>{text}</p>
+          {category === "/img/news/news.png" && <PhotoAlbum />}
         </div>
       </div>
     </>
