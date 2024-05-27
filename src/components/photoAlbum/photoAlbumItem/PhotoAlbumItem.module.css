@@ -5,5 +5,13 @@
 
   object-fit: cover;
 
-  box-shadow: 2px 2px 5px;
+  box-shadow: 2px 2px 5px grey;
+
+  transition: transform 0.2s;
+}
+
+.photo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: 0;
 }

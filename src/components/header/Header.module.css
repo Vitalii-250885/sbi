@@ -13,6 +13,8 @@
 
   box-shadow: 2px 2px 5px;
 
+  z-index: 9999999;
+
   @media screen and (min-width: 768px) {
     height: 60px;
 

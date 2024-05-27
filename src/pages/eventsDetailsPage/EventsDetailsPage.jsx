@@ -16,24 +16,31 @@ const NewsDetailsPage = () => {
   const img = article[0].img;
   const date = article[0].date;
   const category = article[0].category;
+  const photoAlbum = article[0].photoAlbum;
 
   return (
     <>
       <div className={css.events}>
         <div className={css["events-container"]}>
-          <img src={`/${img}`} alt="" className={css.image} />
-          <div className={css["top-article"]}>
-            <p className={css.date}>{date}</p>
-            <Link to="/events" className={css["go-back"]}>
-              Назад
-            </Link>
+          <div className={css.article}>
+            <img src={`/${img}`} alt="" className={css.image} />
+            <div className={css["top-article"]}>
+              <p className={css.date}>{date}</p>
+              <Link to="/events" className={css["go-back"]}>
+                Назад
+              </Link>
+            </div>
+            <div>
+              <img src={category} alt="" className={css.category} />
+            </div>
+            <h2 className={css.title}>{title}</h2>
+            <p className={css.text}>{text}</p>
           </div>
-          <div>
-            <img src={category} alt="" className={css.category} />
+          <div className={css["photo-album"]}>
+            {category === "/img/news/news.png" && (
+              <PhotoAlbum photoAlbum={photoAlbum} />
+            )}
           </div>
-          <h2 className={css.title}>{title}</h2>
-          <p className={css.text}>{text}</p>
-          {category === "/img/news/news.png" && <PhotoAlbum />}
         </div>
       </div>
     </>
