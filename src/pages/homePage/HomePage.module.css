@@ -16,6 +16,8 @@
   background-size: cover;
   background-color: #f2f2f2;
 
+  z-index: 99999999;
+
   @media screen and (min-width: 768px) {
     align-items: stretch;
     padding: 0;
