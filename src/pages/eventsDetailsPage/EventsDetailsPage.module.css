@@ -16,9 +16,15 @@
   display: flex;
   flex-direction: column;
 
+  padding: 10px;
+
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 5px 5px 10px grey;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .article {
