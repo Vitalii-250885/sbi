@@ -33,7 +33,7 @@
 }
 
 .subtitle {
-  margin-top: 10px;
+  margin: 20px 0;
 
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -42,9 +42,13 @@
   font-size: 16px;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
+.item {
+  margin: 0 0 15px 15px;
+  padding-left: 10px;
 
-  list-style: none;
+  list-style-type: "\2799";
+}
+
+.item:last-child {
+  margin-bottom: 0;
 }
